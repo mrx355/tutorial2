@@ -44,9 +44,21 @@ h1, h2{
    box-shadow: 2px 2px 7px #000;
 }
 
+article#about_tss h1 {
+color: white;
+background-color: rgb(222,128,60);
+}
+
+article#about_tss h2 {
+   color: white;
+   background-color: rgb(235,177,131);
+   }
+
 /* Aside and Blockquote Styles */
 
-
+aside blockquote{
+   color: rgb(232,165,116);
+}
 
 
 
