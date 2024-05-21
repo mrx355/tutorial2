@@ -17,6 +17,7 @@
 
 
 /* HTML and Body Styles */
+
 html{
    background-color: hsl(27, 72%, 72%);
 }
@@ -26,9 +27,16 @@ body{
    background-color: ivory;
 }
 
-
+body > footer address{
+   background-color: rgb(222,128,60);
+   color: white;
+   color: rgba(255, 255, 255, 0.7);
+   font: normal small-caps bold 0.9em/3em
+         Quicksand, Verdana, genava, sans serif;
+}
 
 /* Heading Styles */
+
 h1{
    color: white;
    background-color: rgb(222,128,60);
@@ -41,7 +49,6 @@ h2{
 
 h1, h2{
    border-radius: 5px;
-   box-shadow: 2px 2px 7px #000;
 }
 
 article#about_tss h1 {
@@ -54,25 +61,64 @@ article#about_tss h2 {
    background-color: rgb(235,177,131);
    }
 
+   article.sylllabus h1, article.syllabus h2{
+      background-color: rgb(255,286,255);
+      color: rgb(101, 101, 101);
+   }
+
+   article.syllabus ol{
+    list-style-type: upper-roman;
+   }
+
+   article.syllabus ol ol{
+      list-style-type: upper-alpha;
+   }
+
+   article.syllabus ol ol ol{
+      list-style-type: decimal;
+   }
+
 /* Aside and Blockquote Styles */
 
 aside blockquote{
    color: rgb(232,165,116);
+   margin: 20px 5px;
 }
 
-
+aside{
+   font-size: 0.8cm;
+}
 
 /* Navigation Styles */	
 
+nav{
+   font-size:0.8cm;
+}
 
+nav > ul{
+   line-height: 2cm;
+}
 
-
+nav > ul li.newgroup{
+   margin-top: 20px;
+}
 
 /* List Styles */
 
+article#about_tss ul li:nth-child(1){
+   list-style-image: url(runicon.png);
+   list-style-position: inside;
+}
 
+article#about_tss ul li:nth-child(2){
+   list-style-image: url(bikeicon.png);
+   list-style-position: inside;
+ }
 
-
+ article#about_tss ul li:nth-child(3){
+   list-style-image: url(swimicon.png);
+   list-style-position: inside;
+ }
 
 /* Footer Styles */
 
