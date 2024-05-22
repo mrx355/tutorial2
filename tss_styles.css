@@ -1,7 +1,7 @@
 @charset  "utf-8";
 
 
-/*
+/*Pseudo elements
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Tutorial Case
@@ -86,17 +86,27 @@ aside blockquote{
 }
 
 aside{
-   font-size: 0.8cm;
+   font-size: 0.8em;
+}
+
+aside blockquote::before{
+   content: open-quote;
+   font-size: 1.6em;
+}
+
+aside blockquote::after{
+   content: close-quote;
+   font-size: 1.6em;
 }
 
 /* Navigation Styles */	
 
 nav{
-   font-size:0.8cm;
+   font-size:0.8em;
 }
 
 nav > ul{
-   line-height: 2cm;
+   line-height: 2em;
 }
 
 nav > ul li.newgroup{
